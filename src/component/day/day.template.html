@@ -1,0 +1,12 @@
+<div layout="column">
+    <md-toolbar class="md-primary">
+        <div class="md-toolbar-tools">
+            <h5 class="md-flex">{{$ctrl.day.name}}</h5>
+        </div>
+    </md-toolbar>
+    <md-content>
+        <rzslider
+                rz-slider-model="$ctrl.day.value"
+                rz-slider-options="$ctrl.options"></rzslider>
+    </md-content>
+</div>
