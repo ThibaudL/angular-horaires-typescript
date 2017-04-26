@@ -7,7 +7,7 @@
 
     <md-content layout-padding>
         <div layout="row" layout-padding>
-            <day day="day" ng-repeat="day in $ctrl.days track by $index"></day>
+            <day day="day" on-end="day.onEnd(modelValue, highValue, type)" ng-repeat="day in $ctrl.days track by $index" ></day>
         </div>
     </md-content>
 </div>
