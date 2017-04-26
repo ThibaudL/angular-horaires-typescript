@@ -26,7 +26,7 @@ export class HoraireComponent {
         this.days.push(new Day('Vendredi'));
         this.days.push(new Day('Samedi'));
         this.days.push(new Day('Dimanche'));
-        let all = new Day('All');
+        let all = new Day('All', 'md-warn');
         all.onEnd = (modelValue, highValue, type) => {
             this.days.forEach((aDay) => {
                 if (aDay.name !== 'All') {
