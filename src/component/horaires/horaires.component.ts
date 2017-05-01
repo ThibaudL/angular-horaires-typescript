@@ -1,6 +1,9 @@
 import Day from "../day/Day";
 import HoraireOption from "./HoraireOption";
 const template = require("./horaires.template.html");
+import "angular-material/angular-material.min.css"
+import "angularjs-slider/dist/rzslider.css"
+
 export class HoraireComponent {
 
     //Component description
