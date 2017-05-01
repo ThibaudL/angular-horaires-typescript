@@ -1,5 +1,7 @@
 Component to select your opening hours.
 
+demo : https://thibaudl.github.io/
+
 Usage :
 
     <horaires
