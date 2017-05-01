@@ -9,12 +9,16 @@ class HoraireRange {
 class Day {
     public name : string;
     public morning? : HoraireRange;
-    public onEnd? : Function;
+    public afternoon? : HoraireRange;
+    public onEndMorning? : Function;
+    public onEndAfternoon? : Function;
     public color? : string;
 
     constructor(name: string, color : string = "md-primary") {
         this.name = name;
         this.color = color;
+        this.morning = new HoraireRange();
+        this.afternoon = new HoraireRange();
     }
 }
 export default Day;

@@ -4,10 +4,11 @@
             <h5 class="md-flex">{{$ctrl.day.name}}</h5>
         </div>
     </md-toolbar>
-    <md-content>
-        <rzslider
-                rz-slider-model="$ctrl.day.morning.min"
-                rz-slider-high="$ctrl.day.morning.max"
-                rz-slider-options="$ctrl.options"></rzslider>
+    <md-content layout="column">
+        <horaire-slider on-end="$ctrl.onEndMorning({modelValue, highValue, type})" horaire-range="$ctrl.day.morning"
+                        horaire-option="$ctrl.morningHoraireOption"></horaire-slider>
+        <hr>
+        <horaire-slider on-end="$ctrl.onEndAfternoon({modelValue, highValue, type})" horaire-range="$ctrl.day.afternoon"
+                        horaire-option="$ctrl.afternoonHoraireOption"></horaire-slider>
     </md-content>
 </div>

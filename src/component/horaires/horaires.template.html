@@ -7,7 +7,13 @@
 
     <md-content layout-padding>
         <div layout="row" layout-padding>
-            <day day="day" on-end="day.onEnd(modelValue, highValue, type)" ng-repeat="day in $ctrl.days track by $index" ></day>
+            <day day="day"
+                 on-end-morning="day.onEndMorning(modelValue, highValue, type)"
+                 on-end-afternoon="day.onEndAfternoon(modelValue, highValue, type)"
+                 ng-repeat="day in $ctrl.days track by $index"
+                 morning-horaire-option="$ctrl.morningOption"
+                 afternoon-horaire-option="$ctrl.afternoonOption"
+            ></day>
         </div>
     </md-content>
 </div>

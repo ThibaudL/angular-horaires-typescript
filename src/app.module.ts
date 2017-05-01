@@ -1,3 +1,4 @@
+import {HoraireSliderComponent} from "./component/horaire-slider/horaire-slider.component";
 import { HoraireComponent } from './component/horaires/horaires.component';
 import { DayComponent } from './component/day/day.component';
 import * as angular from "angular";
@@ -9,5 +10,6 @@ import 'angular-sanitize';
 import 'angularjs-slider';
 
 export default angular.module('my-app', ['ngMaterial', 'ngSanitize', 'rzModule'])
+    .component(HoraireSliderComponent.selector,HoraireSliderComponent.component)
     .component(HoraireComponent.selector,HoraireComponent.component)
     .component(DayComponent.selector,DayComponent.component);
