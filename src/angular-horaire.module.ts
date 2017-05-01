@@ -9,7 +9,10 @@ import 'angular-messages';
 import 'angular-sanitize';
 import 'angularjs-slider';
 
-export default angular.module('my-app', ['ngMaterial', 'ngSanitize', 'rzModule'])
+const NAME = 'angular.horaires';
+ angular.module(NAME, ['ngMaterial', 'ngSanitize', 'rzModule'])
     .component(HoraireSliderComponent.selector,HoraireSliderComponent.component)
     .component(HoraireComponent.selector,HoraireComponent.component)
     .component(DayComponent.selector,DayComponent.component);
+
+export default NAME;

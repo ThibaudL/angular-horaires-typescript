@@ -1,8 +1,10 @@
+const path = require("path");
 module.exports = {
     entry: './src/main.ts',
     output: {
         filename: 'bundle.js',
-        path: '/'
+        publicPath: '/',
+        path : path.join(__dirname, '/dist')
     },
     module: {
         rules: [

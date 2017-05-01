@@ -1,11 +1,21 @@
 {
-  "name": "angular-decorators",
+  "name": "angular-horaires",
   "version": "1.0.0",
-  "description": "TODO : change description",
-  "author": "Thibaud Lamarche",
+  "description": "Angular component used to display Weekly Hours selection, written in typescript",
+  "keywords": [
+    "angular",
+    "typescript",
+    "horaires",
+    "hours",
+    "weekly"
+  ],
+  "author": "Thibaud Lamarche (thibaud.lamarche@gmail.com)",
+  "homepage": "https://github.com/ThibaudL/angular-horaires-typescript",
   "scripts": {
+    "build" : "webpack -p -d",
     "start": "webpack-dev-server -w -d"
   },
+  "index" : "dist/bundle.js",
   "main": "src/index.js",
   "dependencies": {
     "@types/angular": "1.6.15",

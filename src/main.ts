@@ -1,5 +1,4 @@
-import app from './app.module';
+import angularHoraire from './angular-horaire.module';
 import * as angular from "angular";
 
-angular.bootstrap(document, [app.name]);
-
+export default angularHoraire;
