@@ -1,19 +1,9 @@
-<div layout="column">
-    <md-toolbar class="md-primary">
-        <div class="md-toolbar-tools">
-            <h2 class="md-flex">Horaires</h2>
-        </div>
-    </md-toolbar>
-
-    <md-content layout-padding>
-        <div layout="row" layout-padding>
-            <day day="day"
-                 on-end-morning="day.onEndMorning(modelValue, highValue, type)"
-                 on-end-afternoon="day.onEndAfternoon(modelValue, highValue, type)"
-                 ng-repeat="day in $ctrl.days track by $index"
-                 morning-horaire-option="$ctrl.morningOption"
-                 afternoon-horaire-option="$ctrl.afternoonOption"
-            ></day>
-        </div>
-    </md-content>
+<div layout="row" layout-padding>
+    <day day="day"
+         on-end-morning="day.onEndMorning(modelValue, highValue, type)"
+         on-end-afternoon="day.onEndAfternoon(modelValue, highValue, type)"
+         ng-repeat="day in $ctrl.days track by $index"
+         morning-horaire-option="$ctrl.morningOption"
+         afternoon-horaire-option="$ctrl.afternoonOption"
+    ></day>
 </div>

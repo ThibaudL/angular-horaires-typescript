@@ -32,7 +32,8 @@ export class HoraireComponent {
         this.$log = $log;
     }
 
-    $onInit() {
+    $onChanges() {
+        this.days.length = 0;
         if (!this.morningOption) {
             this.$log.error("parameter morning-option is mandatory")
             throw "";
